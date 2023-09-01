@@ -9,15 +9,18 @@ public class AppCarrinho {
         carrinho.adicionarItem("Mochila", 149.49, 1);
 
         carrinho.exibirItens();
-        System.out.println("Valor total do carrinho de compras: R$ " + carrinho.calcularValorTotal());
+        System.out.println("Valor total do carrinho de compras: R$ "
+                + carrinho.calcularValorTotal());
 
         carrinho.removerItem("Caneta");
         carrinho.exibirItens();
-        System.out.println("Valor total do carrinho de compras: R$ " + carrinho.calcularValorTotal());
+        System.out.println("Valor total do carrinho de compras: R$ "
+                + carrinho.calcularValorTotal());
 
         carrinho.alterarItem(1, "Caneta", 1, 1.59);
         carrinho.exibirItens();
-        System.out.println("Valor total do carrinho de compras alterado: R$ " + carrinho.calcularValorTotal());
+        System.out.println("Valor total do carrinho de compras alterado: R$ "
+                + carrinho.calcularValorTotal());
 
     }
 }
