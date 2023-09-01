@@ -1,4 +1,4 @@
-package main.java.list.OperacoesBasicas;
+package main.java.list.operacoesbasicas;
 
 public class AppCarrinho {
     public static void main(String[] args) {
