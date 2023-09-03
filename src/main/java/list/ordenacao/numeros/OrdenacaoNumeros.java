@@ -39,7 +39,4 @@ public class OrdenacaoNumeros {
             throw new RuntimeException("A lista esta vazia.");
         }
     }
-
-
-
 }
