@@ -15,15 +15,12 @@ public class ConjuntoConvidados {
         convidadoSet.add(new Convidado(nome, codigoConvite));
     }
 
-    public void removerConvidadoPorCodigoConvite(int codigoConvite) throws Exception {
+    public void removerConvidadoPorCodigoConvite(int codigoConvite) {
         Convidado convidadoParaRemover = null;
-        for (Convidado c: convidadoSet
-             ) {
+        for (Convidado c: convidadoSet) {
             if (c.getCodigoConvite() == codigoConvite) {
                 convidadoParaRemover = c;
                 break;
-            } else {
-                throw new Exception("Não existe convidado com esse código de convite.");
             }
         }
         convidadoSet.remove(convidadoParaRemover);
@@ -45,5 +42,13 @@ public class ConjuntoConvidados {
         conjuntoConvidados.addConvidado("Vanessa", 1235);
         conjuntoConvidados.addConvidado("Janio", 1236);
         conjuntoConvidados.addConvidado("Juliana", 1237);
+
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidados dentro do Set de Convidados.");
+
+        conjuntoConvidados.exibirConvidados();
+
+        conjuntoConvidados.removerConvidadoPorCodigoConvite(1236);
+
+        conjuntoConvidados.exibirConvidados();
     }
 }
