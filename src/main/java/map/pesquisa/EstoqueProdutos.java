@@ -17,17 +17,14 @@ public class EstoqueProdutos {
     }
 
     public void exibirProdutos() {
-        System.out.println(estoqueProdutosMap.values());
+        System.out.println(estoqueProdutosMap);
     }
 
     public Double calcularValorTotalEstoque() {
-        Double valorTotalEstoque = 0.0;
+        double valorTotalEstoque = 0.0;
         if(!estoqueProdutosMap.isEmpty()) {
-
             for (Produto p : estoqueProdutosMap.values()) {
-
                 valorTotalEstoque += p.getPreco() * p.getQuantidade();
-
             }
         }
         return valorTotalEstoque;
